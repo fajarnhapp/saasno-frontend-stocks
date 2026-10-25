@@ -1,0 +1,382 @@
+[
+    {
+        "value": "Jakarta Barat",
+        "label": "Jakarta Barat"
+    },
+    {
+        "value": "Jakarta Pusat",
+        "label": "Jakarta Pusat"
+    },
+    {
+        "value": "Jakarta Selatan",
+        "label": "Jakarta Selatan"
+    },
+    {
+        "value": "Jakarta Timur",
+        "label": "Jakarta Timur"
+    },
+    {
+        "value": "Jakarta Utara",
+        "label": "Jakarta Utara"
+    },
+    {
+        "value": "Ambon",
+        "label": "Ambon"
+    },
+    {
+        "value": "Balikpapan",
+        "label": "Balikpapan"
+    },
+    {
+        "value": "Banda Aceh",
+        "label": "Banda Aceh"
+    },
+    {
+        "value": "Bandar Lampung",
+        "label": "Bandar Lampung"
+    },
+    {
+        "value": "Bandung",
+        "label": "Bandung"
+    },
+    {
+        "value": "Banjar",
+        "label": "Banjar"
+    },
+    {
+        "value": "Banjarmasin",
+        "label": "Banjarmasin"
+    },
+    {
+        "value": "Batam",
+        "label": "Batam"
+    },
+    {
+        "value": "Batu",
+        "label": "Batu"
+    },
+    {
+        "value": "Bau-Bau",
+        "label": "Bau-Bau"
+    },
+    {
+        "value": "Bekasi",
+        "label": "Bekasi"
+    },
+    {
+        "value": "Bengkulu",
+        "label": "Bengkulu"
+    },
+    {
+        "value": "Bima",
+        "label": "Bima"
+    },
+    {
+        "value": "Binjai",
+        "label": "Binjai"
+    },
+    {
+        "value": "Bitung",
+        "label": "Bitung"
+    },
+    {
+        "value": "Blitar",
+        "label": "Blitar"
+    },
+    {
+        "value": "Bogor",
+        "label": "Bogor"
+    },
+    {
+        "value": "Bontang",
+        "label": "Bontang"
+    },
+    {
+        "value": "Bukittinggi",
+        "label": "Bukittinggi"
+    },
+    {
+        "value": "Cilegon",
+        "label": "Cilegon"
+    },
+    {
+        "value": "Cimahi",
+        "label": "Cimahi"
+    },
+    {
+        "value": "Cirebon",
+        "label": "Cirebon"
+    },
+    {
+        "value": "Denpasar",
+        "label": "Denpasar"
+    },
+    {
+        "value": "Depok",
+        "label": "Depok"
+    },
+    {
+        "value": "Dumai",
+        "label": "Dumai"
+    },
+    {
+        "value": "Gorontalo",
+        "label": "Gorontalo"
+    },
+    {
+        "value": "Gunungsitoli",
+        "label": "Gunungsitoli"
+    },
+    {
+        "value": "Jambi",
+        "label": "Jambi"
+    },
+    {
+        "value": "Jayapura",
+        "label": "Jayapura"
+    },
+    {
+        "value": "Kediri",
+        "label": "Kediri"
+    },
+    {
+        "value": "Kendari",
+        "label": "Kendari"
+    },
+    {
+        "value": "Kotamobagu",
+        "label": "Kotamobagu"
+    },
+    {
+        "value": "Kupang",
+        "label": "Kupang"
+    },
+    {
+        "value": "Langsa",
+        "label": "Langsa"
+    },
+    {
+        "value": "Lhokseumawe",
+        "label": "Lhokseumawe"
+    },
+    {
+        "value": "Lubuklinggau",
+        "label": "Lubuklinggau"
+    },
+    {
+        "value": "Madiun",
+        "label": "Madiun"
+    },
+    {
+        "value": "Magelang",
+        "label": "Magelang"
+    },
+    {
+        "value": "Makassar",
+        "label": "Makassar"
+    },
+    {
+        "value": "Malang",
+        "label": "Malang"
+    },
+    {
+        "value": "Manado",
+        "label": "Manado"
+    },
+    {
+        "value": "Mataram",
+        "label": "Mataram"
+    },
+    {
+        "value": "Medan",
+        "label": "Medan"
+    },
+    {
+        "value": "Metro",
+        "label": "Metro"
+    },
+    {
+        "value": "Mojokerto",
+        "label": "Mojokerto"
+    },
+    {
+        "value": "Padang",
+        "label": "Padang"
+    },
+    {
+        "value": "Padang Panjang",
+        "label": "Padang Panjang"
+    },
+    {
+        "value": "Padang Sidempuan",
+        "label": "Padang Sidempuan"
+    },
+    {
+        "value": "Pagar Alam",
+        "label": "Pagar Alam"
+    },
+    {
+        "value": "Palangka Raya",
+        "label": "Palangka Raya"
+    },
+    {
+        "value": "Palembang",
+        "label": "Palembang"
+    },
+    {
+        "value": "Palopo",
+        "label": "Palopo"
+    },
+    {
+        "value": "Palu",
+        "label": "Palu"
+    },
+    {
+        "value": "Pangkal Pinang",
+        "label": "Pangkal Pinang"
+    },
+    {
+        "value": "Parepare",
+        "label": "Parepare"
+    },
+    {
+        "value": "Pariaman",
+        "label": "Pariaman"
+    },
+    {
+        "value": "Pasuruan",
+        "label": "Pasuruan"
+    },
+    {
+        "value": "Payakumbuh",
+        "label": "Payakumbuh"
+    },
+    {
+        "value": "Pekalongan",
+        "label": "Pekalongan"
+    },
+    {
+        "value": "Pekanbaru",
+        "label": "Pekanbaru"
+    },
+    {
+        "value": "Pematangsiantar",
+        "label": "Pematangsiantar"
+    },
+    {
+        "value": "Pontianak",
+        "label": "Pontianak"
+    },
+    {
+        "value": "Prabumulih",
+        "label": "Prabumulih"
+    },
+    {
+        "value": "Probolinggo",
+        "label": "Probolinggo"
+    },
+    {
+        "value": "Sabang",
+        "label": "Sabang"
+    },
+    {
+        "value": "Salatiga",
+        "label": "Salatiga"
+    },
+    {
+        "value": "Samarinda",
+        "label": "Samarinda"
+    },
+    {
+        "value": "Sawahlunto",
+        "label": "Sawahlunto"
+    },
+    {
+        "value": "Semarang",
+        "label": "Semarang"
+    },
+    {
+        "value": "Serang",
+        "label": "Serang"
+    },
+    {
+        "value": "Sibolga",
+        "label": "Sibolga"
+    },
+    {
+        "value": "Singkawang",
+        "label": "Singkawang"
+    },
+    {
+        "value": "Solok",
+        "label": "Solok"
+    },
+    {
+        "value": "Sorong",
+        "label": "Sorong"
+    },
+    {
+        "value": "Subulussalam",
+        "label": "Subulussalam"
+    },
+    {
+        "value": "Sukabumi",
+        "label": "Sukabumi"
+    },
+    {
+        "value": "Sungai Penuh",
+        "label": "Sungai Penuh"
+    },
+    {
+        "value": "Surabaya",
+        "label": "Surabaya"
+    },
+    {
+        "value": "Surakarta",
+        "label": "Surakarta"
+    },
+    {
+        "value": "Tangerang",
+        "label": "Tangerang"
+    },
+    {
+        "value": "Tangerang Selatan",
+        "label": "Tangerang Selatan"
+    },
+    {
+        "value": "Tanjung Balai",
+        "label": "Tanjung Balai"
+    },
+    {
+        "value": "Tanjung Pinang",
+        "label": "Tanjung Pinang"
+    },
+    {
+        "value": "Tarakan",
+        "label": "Tarakan"
+    },
+    {
+        "value": "Tasikmalaya",
+        "label": "Tasikmalaya"
+    },
+    {
+        "value": "Tebing Tinggi",
+        "label": "Tebing Tinggi"
+    },
+    {
+        "value": "Tegal",
+        "label": "Tegal"
+    },
+    {
+        "value": "Tidore Kepulauan",
+        "label": "Tidore Kepulauan"
+    },
+    {
+        "value": "Tomohon",
+        "label": "Tomohon"
+    },
+    {
+        "value": "Tual",
+        "label": "Tual"
+    }
+]

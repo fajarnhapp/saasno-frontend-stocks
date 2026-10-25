@@ -1,0 +1,31 @@
+[ {
+  "value" : "Biaro",
+  "label" : "Biaro"
+}, {
+  "value" : "Siau Barat",
+  "label" : "Siau Barat"
+}, {
+  "value" : "Siau Barat Selatan",
+  "label" : "Siau Barat Selatan"
+}, {
+  "value" : "Siau Barat Utara",
+  "label" : "Siau Barat Utara"
+}, {
+  "value" : "Siau Tengah",
+  "label" : "Siau Tengah"
+}, {
+  "value" : "Siau Timur",
+  "label" : "Siau Timur"
+}, {
+  "value" : "Siau Timur Selatan",
+  "label" : "Siau Timur Selatan"
+}, {
+  "value" : "Tagulandang",
+  "label" : "Tagulandang"
+}, {
+  "value" : "Tagulandang Selatan",
+  "label" : "Tagulandang Selatan"
+}, {
+  "value" : "Tagulandang Utara",
+  "label" : "Tagulandang Utara"
+} ]

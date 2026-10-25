@@ -1,0 +1,16 @@
+[ {
+  "value" : "Metro Barat",
+  "label" : "Metro Barat"
+}, {
+  "value" : "Metro Pusat",
+  "label" : "Metro Pusat"
+}, {
+  "value" : "Metro Selatan",
+  "label" : "Metro Selatan"
+}, {
+  "value" : "Metro Timur",
+  "label" : "Metro Timur"
+}, {
+  "value" : "Metro Utara",
+  "label" : "Metro Utara"
+} ]

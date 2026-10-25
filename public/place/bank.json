@@ -1,0 +1,186 @@
+[
+    {
+        "label": "BCA",
+        "value": "BCA"
+    },
+    {
+        "label": "Mandiri",
+        "value": "MANDIRI"
+    },
+    {
+        "label": "BRI",
+        "value": "BRI"
+    },
+    {
+        "label": "BNI",
+        "value": "BNI"
+    },
+    {
+        "label": "BTN",
+        "value": "BTN"
+    },
+    {
+        "label": "CIMB Niaga",
+        "value": "CIMB_NIAGA"
+    },
+    {
+        "label": "Danamon",
+        "value": "DANAMON"
+    },
+    {
+        "label": "Maybank",
+        "value": "MAYBANK"
+    },
+    {
+        "label": "Panin Bank",
+        "value": "PANIN"
+    },
+    {
+        "label": "Permata Bank",
+        "value": "PERMATA"
+    },
+    {
+        "label": "Bank Mega",
+        "value": "MEGA"
+    },
+    {
+        "label": "Bank Syariah Indonesia (BSI)",
+        "value": "BSI"
+    },
+    {
+        "label": "OCBC NISP",
+        "value": "OCBC_NISP"
+    },
+    {
+        "label": "Bank Jago",
+        "value": "JAGO"
+    },
+    {
+        "label": "Bank Sinarmas",
+        "value": "SINARMAS"
+    },
+    {
+        "label": "Bank Bukopin",
+        "value": "BUKOPIN"
+    },
+    {
+        "label": "Bank BTPN / Jenius",
+        "value": "BTPN"
+    },
+    {
+        "label": "UOB Indonesia",
+        "value": "UOB"
+    },
+    {
+        "label": "HSBC Indonesia",
+        "value": "HSBC"
+    },
+    {
+        "label": "Citibank",
+        "value": "CITIBANK"
+    },
+    {
+        "label": "Commonwealth Bank",
+        "value": "COMMONWEALTH"
+    },
+    {
+        "label": "Standard Chartered",
+        "value": "STANDARD_CHARTERED"
+    },
+    {
+        "label": "Bank NTB",
+        "value": "NTB"
+    },
+    {
+        "label": "Bank DKI",
+        "value": "DKI"
+    },
+    {
+        "label": "Bank Jateng",
+        "value": "JATENG"
+    },
+    {
+        "label": "Bank Jatim",
+        "value": "JATIM"
+    },
+    {
+        "label": "Bank Papua",
+        "value": "PAPUA"
+    },
+    {
+        "label": "Bank Aceh",
+        "value": "ACEH"
+    },
+    {
+        "label": "Bank Sumut",
+        "value": "SUMUT"
+    },
+    {
+        "label": "Bank Nagari",
+        "value": "NAGARI"
+    },
+    {
+        "label": "Bank Riau Kepri",
+        "value": "RIAU_KEPRI"
+    },
+    {
+        "label": "Bank Sumsel Babel",
+        "value": "SUMSEL_BABEL"
+    },
+    {
+        "label": "Bank Bengkulu",
+        "value": "BENGKULU"
+    },
+    {
+        "label": "Bank Lampung",
+        "value": "LAMPUNG"
+    },
+    {
+        "label": "Bank Jambi",
+        "value": "JAMBI"
+    },
+    {
+        "label": "Bank Kalsel",
+        "value": "KALSEL"
+    },
+    {
+        "label": "Bank Kalbar",
+        "value": "KALBAR"
+    },
+    {
+        "label": "Bank Kalteng",
+        "value": "KALTENG"
+    },
+    {
+        "label": "Bank Kaltimtara",
+        "value": "KALTIMTARA"
+    },
+    {
+        "label": "Bank Sulselbar",
+        "value": "SULSEL_BAR"
+    },
+    {
+        "label": "Bank SulutGo",
+        "value": "SULUT_GO"
+    },
+    {
+        "label": "Bank Sulteng",
+        "value": "SULTENG"
+    },
+    {
+        "label": "Bank Sultra",
+        "value": "SULTRA"
+    },
+    {
+        "label": "Bank Maluku Malut",
+        "value": "MALUKU_MALUT"
+    },
+    {
+        "label": "Bank NTT",
+        "value": "NTT"
+    },
+    {
+        "label": "Bank NTP",
+        "value": "NTP"
+    }
+]

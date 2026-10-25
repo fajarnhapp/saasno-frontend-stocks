@@ -1,0 +1,34 @@
+[ {
+  "value" : "Barangka",
+  "label" : "Barangka"
+}, {
+  "value" : "Kusambi",
+  "label" : "Kusambi"
+}, {
+  "value" : "Lawa",
+  "label" : "Lawa"
+}, {
+  "value" : "Maginti",
+  "label" : "Maginti"
+}, {
+  "value" : "Napano Kusambi",
+  "label" : "Napano Kusambi"
+}, {
+  "value" : "Sawerigadi",
+  "label" : "Sawerigadi"
+}, {
+  "value" : "Tiworo Kepulauan",
+  "label" : "Tiworo Kepulauan"
+}, {
+  "value" : "Tiworo Selatan",
+  "label" : "Tiworo Selatan"
+}, {
+  "value" : "Tiworo Tengah",
+  "label" : "Tiworo Tengah"
+}, {
+  "value" : "Tiworo Utara",
+  "label" : "Tiworo Utara"
+}, {
+  "value" : "Wadaga",
+  "label" : "Wadaga"
+} ]

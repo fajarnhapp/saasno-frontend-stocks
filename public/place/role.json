@@ -1,0 +1,34 @@
+[
+    {
+        "value": "OWNER",
+        "label": "OWNER"
+    },
+    {
+        "value": "SALES",
+        "label": "SALES"
+    },
+    {
+        "value": "WAREHOUSE_MANAGER",
+        "label": "WAREHOUSE_MANAGER"
+    },
+    {
+        "value": "WAREHOUSE_STAFF",
+        "label": "WAREHOUS_STAFF"
+    },
+    {
+        "value": "WAREHOUS_ADMIN",
+        "label": "WAREHOUS_ADMIN"
+    },
+    {
+        "value": "BRANCH_MANAGER",
+        "label": "BRANCH_MANAGER"
+    },
+    {
+        "value": "BRANCH_STAFF",
+        "label": "BRANCH_STAFF"
+    },
+    {
+        "value": "BRANCH_ADMIN",
+        "label": "BRANCH_ADMIN"
+    }
+]

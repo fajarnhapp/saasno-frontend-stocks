@@ -1,0 +1,55 @@
+[ {
+  "value" : "Abad Selatan",
+  "label" : "Abad Selatan"
+}, {
+  "value" : "Alor Barat Daya",
+  "label" : "Alor Barat Daya"
+}, {
+  "value" : "Alor Barat Laut",
+  "label" : "Alor Barat Laut"
+}, {
+  "value" : "Alor Selatan",
+  "label" : "Alor Selatan"
+}, {
+  "value" : "Alor Tengah Utara",
+  "label" : "Alor Tengah Utara"
+}, {
+  "value" : "Alor Timur",
+  "label" : "Alor Timur"
+}, {
+  "value" : "Alor Timur Laut",
+  "label" : "Alor Timur Laut"
+}, {
+  "value" : "Kabola",
+  "label" : "Kabola"
+}, {
+  "value" : "Lembur",
+  "label" : "Lembur"
+}, {
+  "value" : "Mataru",
+  "label" : "Mataru"
+}, {
+  "value" : "Pantar",
+  "label" : "Pantar"
+}, {
+  "value" : "Pantar Barat",
+  "label" : "Pantar Barat"
+}, {
+  "value" : "Pantar Barat Laut",
+  "label" : "Pantar Barat Laut"
+}, {
+  "value" : "Pantar Tengah",
+  "label" : "Pantar Tengah"
+}, {
+  "value" : "Pantar Timur",
+  "label" : "Pantar Timur"
+}, {
+  "value" : "Pulau Pura",
+  "label" : "Pulau Pura"
+}, {
+  "value" : "Pureman",
+  "label" : "Pureman"
+}, {
+  "value" : "Teluk Mutiara",
+  "label" : "Teluk Mutiara"
+} ]

@@ -1,0 +1,88 @@
+@import "tailwindcss";
+/* =========================
+WARNA UTAMA (BRAND)
+Seluruh UI memakai kelas bg-brand-*, text-brand-*, border-brand-*, dst.
+Untuk mengganti warna utama cukup ubah dua nilai di bawah:
+  --brand-hue    : sudut warna (0-360). Violet 293, biru 260, hijau 150, teal 190, oranye 55, merah 25, pink 350.
+  --brand-chroma : pengali kejenuhan (1 = penuh seperti violet; 0.6-0.8 lebih cocok untuk hijau/kuning/oranye).
+Contoh hijau: --brand-hue: 150; --brand-chroma: 0.65;
+========================= */
+:root {
+    --brand-hue: 293;
+    --brand-chroma: 1;
+}
+
+@theme {
+    --color-brand-50: oklch(97.7% calc(0.014 * var(--brand-chroma)) var(--brand-hue));
+    --color-brand-100: oklch(94.3% calc(0.029 * var(--brand-chroma)) var(--brand-hue));
+    --color-brand-200: oklch(89.4% calc(0.057 * var(--brand-chroma)) var(--brand-hue));
+    --color-brand-300: oklch(81.1% calc(0.111 * var(--brand-chroma)) var(--brand-hue));
+    --color-brand-400: oklch(70.2% calc(0.183 * var(--brand-chroma)) var(--brand-hue));
+    --color-brand-500: oklch(60.6% calc(0.25 * var(--brand-chroma)) var(--brand-hue));
+    --color-brand-600: oklch(54.1% calc(0.281 * var(--brand-chroma)) var(--brand-hue));
+    --color-brand-700: oklch(49.1% calc(0.27 * var(--brand-chroma)) var(--brand-hue));
+    --color-brand-800: oklch(43.2% calc(0.232 * var(--brand-chroma)) var(--brand-hue));
+    --color-brand-900: oklch(38% calc(0.189 * var(--brand-chroma)) var(--brand-hue));
+    /* Pasangan gradien (sebelumnya indigo): bergeser 16 derajat dari warna utama. */
+    --color-brand-alt-300: oklch(78.5% calc(0.12 * var(--brand-chroma)) calc(var(--brand-hue) - 16));
+    --color-brand-alt-700: oklch(45.7% calc(0.24 * var(--brand-chroma)) calc(var(--brand-hue) - 16));
+}
+
+
+.shimmer {
+    background: linear-gradient(90deg,
+            #eeeeee 0%,
+            #f5f5f5 50%,
+            #eeeeee 100%);
+    background-size: 200% 100%;
+    animation: shimmer 1.6s linear infinite;
+    will-change: background-position;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+
+/* =========================
+FLATPICKR FIX (IMPORTANT)
+========================= */
+@layer components {
+
+    /* flatpickr membungkus input jika static: true */
+    .flatpickr-wrapper {
+        @apply w-full;
+    }
+
+    .flatpickr-input {
+        @apply w-full;
+    }
+
+    /* Optional: rapikan popup calendar */
+    .flatpickr-calendar {
+        @apply rounded-xl shadow-lg border border-gray-200;
+    }
+
+    /* Dark mode support */
+    .dark .flatpickr-calendar {
+        @apply bg-gray-800 text-gray-100 border-gray-700;
+    }
+
+    .dark .flatpickr-day {
+        @apply text-gray-200;
+    }
+
+    .dark .flatpickr-day:hover {
+        @apply bg-gray-700;
+    }
+
+    .dark .flatpickr-day.selected {
+        @apply bg-blue-600 text-white;
+    }
+}

@@ -1,0 +1,82 @@
+[ {
+  "value" : "Kabupaten Bandung",
+  "label" : "Kabupaten Bandung"
+}, {
+  "value" : "Kabupaten Bandung Barat",
+  "label" : "Kabupaten Bandung Barat"
+}, {
+  "value" : "Kabupaten Bekasi",
+  "label" : "Kabupaten Bekasi"
+}, {
+  "value" : "Kabupaten Bogor",
+  "label" : "Kabupaten Bogor"
+}, {
+  "value" : "Kabupaten Ciamis",
+  "label" : "Kabupaten Ciamis"
+}, {
+  "value" : "Kabupaten Cianjur",
+  "label" : "Kabupaten Cianjur"
+}, {
+  "value" : "Kabupaten Cirebon",
+  "label" : "Kabupaten Cirebon"
+}, {
+  "value" : "Kabupaten Garut",
+  "label" : "Kabupaten Garut"
+}, {
+  "value" : "Kabupaten Indramayu",
+  "label" : "Kabupaten Indramayu"
+}, {
+  "value" : "Kabupaten Karawang",
+  "label" : "Kabupaten Karawang"
+}, {
+  "value" : "Kabupaten Kuningan",
+  "label" : "Kabupaten Kuningan"
+}, {
+  "value" : "Kabupaten Majalengka",
+  "label" : "Kabupaten Majalengka"
+}, {
+  "value" : "Kabupaten Pangandaran",
+  "label" : "Kabupaten Pangandaran"
+}, {
+  "value" : "Kabupaten Purwakarta",
+  "label" : "Kabupaten Purwakarta"
+}, {
+  "value" : "Kabupaten Subang",
+  "label" : "Kabupaten Subang"
+}, {
+  "value" : "Kabupaten Sukabumi",
+  "label" : "Kabupaten Sukabumi"
+}, {
+  "value" : "Kabupaten Sumedang",
+  "label" : "Kabupaten Sumedang"
+}, {
+  "value" : "Kabupaten Tasikmalaya",
+  "label" : "Kabupaten Tasikmalaya"
+}, {
+  "value" : "Kota Bandung",
+  "label" : "Kota Bandung"
+}, {
+  "value" : "Kota Banjar",
+  "label" : "Kota Banjar"
+}, {
+  "value" : "Kota Bekasi",
+  "label" : "Kota Bekasi"
+}, {
+  "value" : "Kota Bogor",
+  "label" : "Kota Bogor"
+}, {
+  "value" : "Kota Cimahi",
+  "label" : "Kota Cimahi"
+}, {
+  "value" : "Kota Cirebon",
+  "label" : "Kota Cirebon"
+}, {
+  "value" : "Kota Depok",
+  "label" : "Kota Depok"
+}, {
+  "value" : "Kota Sukabumi",
+  "label" : "Kota Sukabumi"
+}, {
+  "value" : "Kota Tasikmalaya",
+  "label" : "Kota Tasikmalaya"
+} ]

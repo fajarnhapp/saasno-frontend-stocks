@@ -1,0 +1,46 @@
+[ {
+  "value" : "Kabupaten Lampung Barat",
+  "label" : "Kabupaten Lampung Barat"
+}, {
+  "value" : "Kabupaten Lampung Selatan",
+  "label" : "Kabupaten Lampung Selatan"
+}, {
+  "value" : "Kabupaten Lampung Tengah",
+  "label" : "Kabupaten Lampung Tengah"
+}, {
+  "value" : "Kabupaten Lampung Timur",
+  "label" : "Kabupaten Lampung Timur"
+}, {
+  "value" : "Kabupaten Lampung Utara",
+  "label" : "Kabupaten Lampung Utara"
+}, {
+  "value" : "Kabupaten Mesuji",
+  "label" : "Kabupaten Mesuji"
+}, {
+  "value" : "Kabupaten Pesawaran",
+  "label" : "Kabupaten Pesawaran"
+}, {
+  "value" : "Kabupaten Pesisir Barat",
+  "label" : "Kabupaten Pesisir Barat"
+}, {
+  "value" : "Kabupaten Pringsewu",
+  "label" : "Kabupaten Pringsewu"
+}, {
+  "value" : "Kabupaten Tanggamus",
+  "label" : "Kabupaten Tanggamus"
+}, {
+  "value" : "Kabupaten Tulang Bawang",
+  "label" : "Kabupaten Tulang Bawang"
+}, {
+  "value" : "Kabupaten Tulang Bawang Barat",
+  "label" : "Kabupaten Tulang Bawang Barat"
+}, {
+  "value" : "Kabupaten Way Kanan",
+  "label" : "Kabupaten Way Kanan"
+}, {
+  "value" : "Kota Bandar Lampung",
+  "label" : "Kota Bandar Lampung"
+}, {
+  "value" : "Kota Metro",
+  "label" : "Kota Metro"
+} ]

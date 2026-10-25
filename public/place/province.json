@@ -1,0 +1,154 @@
+[
+    {
+        "value": "Aceh",
+        "label": "Aceh"
+    },
+    {
+        "value": "Bali",
+        "label": "Bali"
+    },
+    {
+        "value": "Banten",
+        "label": "Banten"
+    },
+    {
+        "value": "Bengkulu",
+        "label": "Bengkulu"
+    },
+    {
+        "value": "Daerah Istimewa Yogyakarta",
+        "label": "Daerah Istimewa Yogyakarta"
+    },
+    {
+        "value": "DKI Jakarta",
+        "label": "DKI Jakarta"
+    },
+    {
+        "value": "Gorontalo",
+        "label": "Gorontalo"
+    },
+    {
+        "value": "Jambi",
+        "label": "Jambi"
+    },
+    {
+        "value": "Jawa Barat",
+        "label": "Jawa Barat"
+    },
+    {
+        "value": "Jawa Tengah",
+        "label": "Jawa Tengah"
+    },
+    {
+        "value": "Jawa Timur",
+        "label": "Jawa Timur"
+    },
+    {
+        "value": "Kalimantan Barat",
+        "label": "Kalimantan Barat"
+    },
+    {
+        "value": "Kalimantan Selatan",
+        "label": "Kalimantan Selatan"
+    },
+    {
+        "value": "Kalimantan Tengah",
+        "label": "Kalimantan Tengah"
+    },
+    {
+        "value": "Kalimantan Timur",
+        "label": "Kalimantan Timur"
+    },
+    {
+        "value": "Kalimantan Utara",
+        "label": "Kalimantan Utara"
+    },
+    {
+        "value": "Kepulauan Bangka Belitung",
+        "label": "Kepulauan Bangka Belitung"
+    },
+    {
+        "value": "Kepulauan Riau",
+        "label": "Kepulauan Riau"
+    },
+    {
+        "value": "Lampung",
+        "label": "Lampung"
+    },
+    {
+        "value": "Maluku",
+        "label": "Maluku"
+    },
+    {
+        "value": "Maluku Utara",
+        "label": "Maluku Utara"
+    },
+    {
+        "value": "Nusa Tenggara Barat",
+        "label": "Nusa Tenggara Barat"
+    },
+    {
+        "value": "Nusa Tenggara Timur",
+        "label": "Nusa Tenggara Timur"
+    },
+    {
+        "value": "Papua",
+        "label": "Papua"
+    },
+    {
+        "value": "Papua Barat",
+        "label": "Papua Barat"
+    },
+    {
+        "value": "Papua Barat Daya",
+        "label": "Papua Barat Daya"
+    },
+    {
+        "value": "Papua Pegunungan",
+        "label": "Papua Pegunungan"
+    },
+    {
+        "value": "Papua Selatan",
+        "label": "Papua Selatan"
+    },
+    {
+        "value": "Papua Tengah",
+        "label": "Papua Tengah"
+    },
+    {
+        "value": "Riau",
+        "label": "Riau"
+    },
+    {
+        "value": "Sulawesi Barat",
+        "label": "Sulawesi Barat"
+    },
+    {
+        "value": "Sulawesi Selatan",
+        "label": "Sulawesi Selatan"
+    },
+    {
+        "value": "Sulawesi Tengah",
+        "label": "Sulawesi Tengah"
+    },
+    {
+        "value": "Sulawesi Tenggara",
+        "label": "Sulawesi Tenggara"
+    },
+    {
+        "value": "Sulawesi Utara",
+        "label": "Sulawesi Utara"
+    },
+    {
+        "value": "Sumatera Barat",
+        "label": "Sumatera Barat"
+    },
+    {
+        "value": "Sumatera Selatan",
+        "label": "Sumatera Selatan"
+    },
+    {
+        "value": "Sumatera Utara",
+        "label": "Sumatera Utara"
+    }
+]

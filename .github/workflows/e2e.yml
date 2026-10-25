@@ -1,0 +1,145 @@
+name: End-to-end tests
+
+# Membuka aplikasi di browser sungguhan (Playwright): login (username dan email), 2FA, buat pengguna lalu aktivasi lewat email, tempat sampah.
+# Menjalankan seluruh tumpukan di runner: PostgreSQL, Redis, MongoDB, RabbitMQ, backend (dari repo saasno-backend, branch utamanya),
+# frontend dari commit ini, dan penampung SMTP kecil untuk membaca email yang dikirim aplikasi.
+# Tidak membangun atau mengirim image apa pun. Detail: e2e/README.md
+on:
+  pull_request:
+  push:
+    branches: [main, UAT]
+  workflow_dispatch:
+
+jobs:
+  e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    concurrency:
+      group: e2e-${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
+    env:
+      E2E_MAIL_DIR: ${{ github.workspace }}/frontend/e2e/.mail
+      SAASNO_FRONTEND_KEY_CSRF: e2e-only-key-not-a-secret-0123456789abcdef
+    steps:
+      - name: Checkout frontend
+        uses: actions/checkout@v4
+        with:
+          path: frontend
+
+      - name: Checkout backend
+        uses: actions/checkout@v4
+        with:
+          # Repo backend privat butuh token yang boleh membacanya: simpan sebagai secret E2E_BACKEND_TOKEN (PAT read-only, atau github.token jika repo publik).
+          repository: fajarnhapp/saasno-backend
+          token: ${{ secrets.E2E_BACKEND_TOKEN || github.token }}
+          path: backend
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 25
+          cache: maven
+          cache-dependency-path: backend/pom.xml
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Start PostgreSQL, Redis, MongoDB and RabbitMQ
+        run: |
+          docker run -d --name e2e-postgres -p 5432:5432 -e POSTGRES_USER=database -e POSTGRES_PASSWORD=database -e POSTGRES_DB=saasno postgres:17
+          docker run -d --name e2e-redis -p 6379:6379 redis:7 redis-server --requirepass admin
+          docker run -d --name e2e-mongo -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=database -e MONGO_INITDB_ROOT_PASSWORD=database mongo:7
+          docker run -d --name e2e-rabbit -p 5672:5672 -e RABBITMQ_DEFAULT_USER=admin -e RABBITMQ_DEFAULT_PASS=admin123 rabbitmq:3
+          for _ in $(seq 1 60); do
+            docker exec e2e-postgres pg_isready -U database -d saasno >/dev/null 2>&1 \
+              && docker exec e2e-redis redis-cli -a admin ping 2>/dev/null | grep -q PONG \
+              && docker exec e2e-mongo mongosh --quiet --eval 'db.runCommand({ping:1}).ok' 2>/dev/null | grep -q 1 \
+              && docker exec e2e-rabbit rabbitmq-diagnostics -q ping >/dev/null 2>&1 \
+              && exit 0
+            sleep 2
+          done
+          echo "The services did not start in time" >&2
+          docker ps -a
+          exit 1
+
+      - name: Create the database (base schema and test accounts)
+        run: |
+          docker exec -i e2e-postgres psql -U database -d saasno -v ON_ERROR_STOP=1 -q < backend/docs/schema/base-schema.sql
+          docker exec -i e2e-postgres psql -U database -d saasno -v ON_ERROR_STOP=1 -q < frontend/e2e/seed.sql
+
+      - name: Build the backend
+        run: mvn -B -q -f backend/pom.xml -DskipTests package
+
+      - name: Start the backend
+        env:
+          SAASNO_MAIL_HOST: 127.0.0.1
+          SAASNO_MANAGEMENT_PORT: "8081"
+        run: |
+          # The backend writes its log under a fixed folder (logback.xml); the runner user may not create it.
+          sudo mkdir -p /home/application/data/logs/com/saasno
+          sudo chown -R "$(id -u):$(id -g)" /home/application/data
+          nohup java -jar backend/target/*.jar > backend.log 2>&1 &
+          for _ in $(seq 1 90); do
+            curl -fs http://localhost:8000/api/public/health >/dev/null && exit 0
+            sleep 2
+          done
+          echo "The backend did not become healthy" >&2
+          tail -n 80 backend.log >&2
+          exit 1
+
+      - name: Install the frontend
+        working-directory: frontend
+        run: npm ci
+
+      - name: Build the frontend
+        working-directory: frontend
+        run: npm run build
+
+      - name: Start the test mail box, the frontend and the HTTPS front
+        working-directory: frontend
+        env:
+          SAASNO_FRONTEND_BACKEND_URL: http://localhost:8000
+          SAASNO_FRONTEND_ORIGIN_PROD: https://localhost:3443
+          # The tests sign in more than 20 times from one address within 10 minutes.
+          SAASNO_FRONTEND_LOGIN_MAX_ATTEMPTS: "1000"
+          SAASNO_FRONTEND_ANONYMOUS_MAX_PER_MINUTE: "10000"
+          NODE_ENV: production
+        run: |
+          openssl req -x509 -newkey rsa:2048 -nodes -keyout "$RUNNER_TEMP/key.pem" -out "$RUNNER_TEMP/cert.pem" -days 1 -subj /CN=localhost
+          nohup node e2e/smtp-sink.mjs "$E2E_MAIL_DIR" 2525 > "$RUNNER_TEMP/sink.log" 2>&1 &
+          nohup npx next start -p 3100 > "$RUNNER_TEMP/frontend.log" 2>&1 &
+          nohup node e2e/tls-proxy.mjs "$RUNNER_TEMP/key.pem" "$RUNNER_TEMP/cert.pem" 3443 3100 > "$RUNNER_TEMP/proxy.log" 2>&1 &
+          for _ in $(seq 1 60); do
+            curl -fsk https://localhost:3443/login >/dev/null && exit 0
+            sleep 2
+          done
+          echo "The frontend did not start" >&2
+          tail -n 50 "$RUNNER_TEMP/frontend.log" >&2
+          exit 1
+
+      - name: Install the browser
+        working-directory: frontend
+        run: npx playwright install --with-deps chromium
+
+      - name: Run the tests
+        working-directory: frontend
+        run: npm run e2e
+
+      - name: Keep the report and the logs when something failed
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: e2e-failure
+          retention-days: 7
+          path: |
+            frontend/playwright-report
+            frontend/test-results
+            backend.log
+            ${{ runner.temp }}/frontend.log

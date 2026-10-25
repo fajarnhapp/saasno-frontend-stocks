@@ -1,0 +1,73 @@
+[ {
+  "value" : "Aifat",
+  "label" : "Aifat"
+}, {
+  "value" : "Aifat Selatan",
+  "label" : "Aifat Selatan"
+}, {
+  "value" : "Aifat Timur",
+  "label" : "Aifat Timur"
+}, {
+  "value" : "Aifat Timur Jauh",
+  "label" : "Aifat Timur Jauh"
+}, {
+  "value" : "Aifat Timur Selatan",
+  "label" : "Aifat Timur Selatan"
+}, {
+  "value" : "Aifat Timur Tengah",
+  "label" : "Aifat Timur Tengah"
+}, {
+  "value" : "Aifat Utara",
+  "label" : "Aifat Utara"
+}, {
+  "value" : "Aitinyo",
+  "label" : "Aitinyo"
+}, {
+  "value" : "Aitinyo Barat",
+  "label" : "Aitinyo Barat"
+}, {
+  "value" : "Aitinyo Raya",
+  "label" : "Aitinyo Raya"
+}, {
+  "value" : "Aitinyo Tengah",
+  "label" : "Aitinyo Tengah"
+}, {
+  "value" : "Aitinyo Utara",
+  "label" : "Aitinyo Utara"
+}, {
+  "value" : "Ayamaru",
+  "label" : "Ayamaru"
+}, {
+  "value" : "Ayamaru Barat",
+  "label" : "Ayamaru Barat"
+}, {
+  "value" : "Ayamaru Jaya",
+  "label" : "Ayamaru Jaya"
+}, {
+  "value" : "Ayamaru Selatan",
+  "label" : "Ayamaru Selatan"
+}, {
+  "value" : "Ayamaru Selatan Jaya",
+  "label" : "Ayamaru Selatan Jaya"
+}, {
+  "value" : "Ayamaru Tengah",
+  "label" : "Ayamaru Tengah"
+}, {
+  "value" : "Ayamaru Timur",
+  "label" : "Ayamaru Timur"
+}, {
+  "value" : "Ayamaru Timur Selatan",
+  "label" : "Ayamaru Timur Selatan"
+}, {
+  "value" : "Ayamaru Utara",
+  "label" : "Ayamaru Utara"
+}, {
+  "value" : "Ayamaru Utara Timur",
+  "label" : "Ayamaru Utara Timur"
+}, {
+  "value" : "Mare",
+  "label" : "Mare"
+}, {
+  "value" : "Mare Selatan",
+  "label" : "Mare Selatan"
+} ]

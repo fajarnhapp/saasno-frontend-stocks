@@ -1,0 +1,66 @@
+services:
+  saasno-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ghcr.io/fajarnhapp/saasno-frontend:${IMAGE_TAG:-latest}
+    container_name: saasno-frontend
+    restart: always
+    read_only: true
+    tmpfs:
+      - /tmp
+    volumes:
+      - /data/logs/com/saasno/frontend:/data/logs/com/saasno/frontend
+    expose:
+      - "3000"
+    networks:
+      - saasno-frontend
+      - saasno-backend
+      # Jaringan bersama Alloy (monitoring): /api/faro meneruskan telemetri browser ke fajarnhapp-alloy:12347 lewat jaringan ini.
+      - fajarnhapp-loki
+      # Jaringan bersama Prometheus (monitoring): Prometheus membaca metrik di saasno-frontend:9464 lewat jaringan ini.
+      - fajarnhapp-prometheus
+    environment:
+      NODE_ENV: production
+      SAASNO_FRONTEND_BACKEND_URL: ${SAASNO_FRONTEND_BACKEND_URL}
+      SAASNO_FRONTEND_KEY_CSRF: ${SAASNO_FRONTEND_KEY_CSRF}
+      # Metrik proses Node di port 9464 (tidak dipublikasikan ke host); 0.0.0.0 agar Prometheus bisa membacanya dari jaringan bersama.
+      SAASNO_FRONTEND_METRICS_ADDRESS: 0.0.0.0
+      # Telemetri browser (error JavaScript dan Web Vitals) diteruskan oleh /api/faro ke Grafana Alloy; kosongkan bila monitoring tidak dipasang.
+      SAASNO_FRONTEND_FARO_URL: ${SAASNO_FRONTEND_FARO_URL:-http://fajarnhapp-alloy:12347/collect}
+      # Jumlah reverse proxy tepercaya di depan frontend. Di sini hanya nginx (Internet → nginx → frontend), jadi 1. IP klien diambil
+      # dari rantai X-Forwarded-For sesuai jumlah ini, bukan nilai mentah dari klien, agar rate-limit & lockout login tidak bisa dipalsukan.
+      SAASNO_FRONTEND_TRUSTED_PROXY_HOPS: ${SAASNO_FRONTEND_TRUSTED_PROXY_HOPS:-1}
+    cpus: 1
+    mem_limit: 1024m
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:3000/ >/dev/null 2>&1 || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "7"
+        compress: "true"
+
+networks:
+  saasno-frontend:
+    name: saasno-frontend
+    external: true
+
+  saasno-backend:
+    name: saasno-backend
+    external: true
+
+  # Dibuat oleh ../loki/startup.sh atau oleh langkah deploy di workflow.
+  fajarnhapp-loki:
+    name: fajarnhapp-loki
+    external: true
+
+  # Dibuat oleh ../prometheus/startup.sh atau oleh langkah deploy di workflow.
+  fajarnhapp-prometheus:
+    name: fajarnhapp-prometheus
+    external: true

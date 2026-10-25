@@ -1,0 +1,31 @@
+[ {
+  "value" : "Bunyu",
+  "label" : "Bunyu"
+}, {
+  "value" : "Peso",
+  "label" : "Peso"
+}, {
+  "value" : "Peso Hilir",
+  "label" : "Peso Hilir"
+}, {
+  "value" : "Sekatak",
+  "label" : "Sekatak"
+}, {
+  "value" : "Tanjung Palas",
+  "label" : "Tanjung Palas"
+}, {
+  "value" : "Tanjung Palas Barat",
+  "label" : "Tanjung Palas Barat"
+}, {
+  "value" : "Tanjung Palas Tengah",
+  "label" : "Tanjung Palas Tengah"
+}, {
+  "value" : "Tanjung Palas Timur",
+  "label" : "Tanjung Palas Timur"
+}, {
+  "value" : "Tanjung Palas Utara",
+  "label" : "Tanjung Palas Utara"
+}, {
+  "value" : "Tanjung Selor",
+  "label" : "Tanjung Selor"
+} ]
